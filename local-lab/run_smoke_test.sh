@@ -40,7 +40,7 @@ esac
 HELPER
 chmod +x "${FAKE_HELPER_DIR}/docker-credential-desktop"
 
-DOCKER_PATH="PATH=${FAKE_HELPER_DIR}:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+DOCKER_PATH="PATH=${FAKE_HELPER_DIR}:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 echo "[1/5] Building and starting lab containers..."
 env ${DOCKER_PATH} docker compose -f "${LAB_DIR}/docker-compose.yml" up -d --build

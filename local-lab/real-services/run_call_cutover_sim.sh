@@ -17,7 +17,7 @@ LONG_CALL_MS="${LONG_CALL_MS:-25000}"
 POST_CUTOVER_CALLS="${POST_CUTOVER_CALLS:-8}"
 PHASE_GAP_SECONDS="${PHASE_GAP_SECONDS:-35}"
 
-DOCKER_PATH="PATH=/tmp/fakebin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+DOCKER_PATH="PATH=/tmp/fakebin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 mkdir -p /tmp/fakebin
 cat > /tmp/fakebin/docker-credential-desktop <<'HELPER'

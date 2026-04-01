@@ -13,7 +13,7 @@ SIM_LOG_FILE="${ART_DIR}/simulation.stdout.log"
 PHASE_FILE="${ART_DIR}/current_phase.txt"
 STATUS_FILE="${ART_DIR}/status.txt"
 
-DOCKER_PATH="PATH=/tmp/fakebin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+DOCKER_PATH="PATH=/tmp/fakebin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 mkdir -p /tmp/fakebin
 cat > /tmp/fakebin/docker-credential-desktop <<'HELPER'

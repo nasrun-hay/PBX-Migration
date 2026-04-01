@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LAB_DIR="${ROOT_DIR}/real-services"
 COMPOSE_FILE="${LAB_DIR}/docker-compose.real.yml"
-DOCKER_PATH="PATH=/tmp/fakebin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+DOCKER_PATH="PATH=/tmp/fakebin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 mkdir -p /tmp/fakebin
 cat > /tmp/fakebin/docker-credential-desktop <<'HELPER'

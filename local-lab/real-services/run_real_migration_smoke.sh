@@ -7,7 +7,7 @@ COMPOSE_FILE="${LAB_DIR}/docker-compose.real.yml"
 SCRIPTS_DIR="${ROOT_DIR}/tooling/scripts"
 ART_DIR="${LAB_DIR}/artifacts/run-$(date +%Y%m%d_%H%M%S)"
 
-DOCKER_PATH="PATH=/tmp/fakebin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+DOCKER_PATH="PATH=/tmp/fakebin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 mkdir -p /tmp/fakebin
 cat > /tmp/fakebin/docker-credential-desktop <<'HELPER'
